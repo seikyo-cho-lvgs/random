@@ -35,7 +35,7 @@ const Random = () => {
       >
         <Grid item spacing={16}>
           <Button variant="contained" color="primary" onClick={handleClick}>
-            Randoms
+            Random
           </Button>
         </Grid>
         <Grid item style={{ visibility: showValue ? "visible" : "hidden" }}>
