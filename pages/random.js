@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { orange } from "@material-ui/core/colors";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: orange,
   },
@@ -27,13 +27,13 @@ const Random = () => {
     <ThemeProvider theme={theme}>
       <Grid
         container
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         direction="column"
         spacing={4}
         style={{ height: "100vh" }}
       >
-        <Grid item spacing={16}>
+        <Grid item>
           <Button variant="contained" color="primary" onClick={handleClick}>
             Random
           </Button>
@@ -53,7 +53,7 @@ const Random = () => {
             {value}
           </Avatar>
         </Grid>
-        <Grid container justify="center" spacing={4}>
+        <Grid container justifyContent="center" spacing={4}>
           {members.map((member, index) => (
             <Grid item key={index}>
               <div

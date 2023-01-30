@@ -9,7 +9,7 @@ const nextConfig = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      '/': { page: '/random' },
+      '/': { page: '/random', query: { __nextDefaultLocale: 'en' } },
     }
   },
   webpack: (config) => {
