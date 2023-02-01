@@ -4,14 +4,6 @@ require('dotenv').config()
 
 const nextConfig = {
   reactStrictMode: true,
-  exportPathMap: async function(
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/random', query: { __nextDefaultLocale: 'en' } },
-    }
-  },
   webpack: (config) => {
     config.plugins.push(new webpack.EnvironmentPlugin(process.env))
     return config
