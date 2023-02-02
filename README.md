@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Set members in .env
+Set .env
 
 ```bash
 cp .env.example .env
