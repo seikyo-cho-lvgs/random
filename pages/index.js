@@ -14,7 +14,7 @@ const Random = () => {
   };
 
   return (
-    <Col style={{ height: "100vh" }}>
+    <Col style={{ height: "98vh" }}>
       <Row justify="center" align="middle" style={{ height: "33.33%" }}>
         <Col span={24}>
           <Row justify="center">
@@ -32,8 +32,6 @@ const Random = () => {
             <div
               style={{
                 textAlign: "center",
-                marginTop: "40px",
-                marginBottom: "40px",
               }}
             >
               <Avatar
